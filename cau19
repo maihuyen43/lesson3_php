@@ -1,0 +1,10 @@
+<?php
+//Viết chương trình PHP để sắp xếp một mảng theo thứ tự giảm dần.
+
+$numbers = array(2, 4, 6, 8, 10);
+rsort($numbers);
+  
+foreach( $numbers as $n) {
+    echo "$n <br>";
+}
+?>

@@ -1,0 +1,13 @@
+<?php 
+//Viết chương trình PHP để tính tổng của các số từ 1 đến n
+function calculateSum($n){
+    $sum=0;
+    for($i=1;$i<=n;$i++){
+        $sum+=$i;
+    }
+    return $sum;
+}
+$n=90;
+$sum=calculateSum($n);
+echo "Tổng từ 1 đến $n là: $sum";
+?>

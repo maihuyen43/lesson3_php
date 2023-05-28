@@ -1,0 +1,20 @@
+<?php
+//Viết chương trình PHP để tính giai thừa của một số nguyên dương
+
+
+function factorialCalculation($n) {
+    $factorial = 1;
+    if ($n == 0 || $n == 1) {
+        return $factorial;
+    } else {
+        for($i = 2; $i <= $n; $i ++) {
+            $factorial *= $i;
+        }
+        return $factorial;
+    }
+}
+ 
+$n = 5;
+echo ("Giai thừa của " . $n . " là: " . factorialCalculation ( $n ) . "<br>");
+
+?>

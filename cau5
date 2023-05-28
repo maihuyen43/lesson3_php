@@ -1,0 +1,12 @@
+<?php
+//Viết chương trình PHP để tìm giá trị lớn nhất và nhỏ nhất trong một mảng
+function maxValue($number){
+    return max($number);
+}
+function minValue($number){
+    return min($number);
+}
+$number= array(1,2,3,4,5,6,7);
+echo max($number); echo "<br>";
+echo min($number);
+?>

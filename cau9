@@ -1,0 +1,8 @@
+<?php
+// Viết chương trình PHP để tính tổng của các số trong một mảng
+function arraySum ($number){
+    
+}
+$numbers = array(2, 3, 5, 7);
+echo array_sum($numbers);
+?>

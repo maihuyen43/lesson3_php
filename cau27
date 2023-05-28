@@ -1,0 +1,26 @@
+<?php
+//Viết chương trình PHP để tìm số âm lớn nhất trong một mảng.
+
+function findLargestNegativeNumber($arr) {
+    $largestNegativeNumber = null;
+
+    foreach ($arr as $num) {
+        if ($num < 0 && ($largestNegativeNumber === null || $num > $largestNegativeNumber)) {
+            $largestNegativeNumber = $num;
+        }
+    }
+
+    return $largestNegativeNumber;
+}
+
+$array = [5, -2, -10, -7, 3, 8, -1];
+
+
+$largestNegative = findLargestNegativeNumber($array);
+
+if ($largestNegative !== null) {
+    echo "Số âm lớn nhất trong mảng là: $largestNegative";
+} else {
+    echo "Không có số âm trong mảng";
+}
+?>

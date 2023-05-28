@@ -1,0 +1,13 @@
+<?php
+//Viết chương trình PHP để kiểm tra xem một chuỗi có phải là chuỗi Palindrome hay không.
+
+        function checkPalindrome($string)   
+		{  
+		  if ($string == strrev($string))  
+			  return 1;  
+		  else  
+			  return 0;  
+		}  
+		echo checkPalindrome('hello')."<br>";
+ ?>
+       

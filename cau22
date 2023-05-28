@@ -1,0 +1,18 @@
+<?php
+//Viết chương trình PHP để tìm ước số chung lớn nhất và bội số chung nhỏ nhất của hai số nguyên dương.
+function greatestCommonDivisor($a, $b) {
+    if ($b == 0) return $a;
+    return greatestCommonDivisor($b, $a % $b);
+}
+ 
+function leastCommonMultiple($a, $b) {
+    return ($a * $b) / greatestCommonDivisor($a, $b);
+}
+ 
+$a = 15;
+$b = 40;
+// tính USCLN của a và b
+echo ("USCLN của $a và $b là: " . greatestCommonDivisor($a, $b)) . "<br>";
+// tính BSCNN của a và b
+echo ("BSCNN của $a và  $b là: " . leastCommonMultiple($a, $b));
+?>

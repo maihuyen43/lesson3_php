@@ -1,0 +1,25 @@
+<?php
+//Viết chương trình PHP để tìm số chính phương trong một khoảng cho trước.
+function squareNumbers($min, $max){
+    $squareNumber = [];
+    for($i = $min; $i <= $max; $i++) {
+        $sqrt = sqrt($i);
+        if($sqrt == floor($sqrt)) {
+            $squareNumber[] = $i;
+        }
+    }
+    return $squareNumber;
+}
+
+$min = 1;
+$max = 100;
+
+$result = squareNumbers($min, $max);
+
+if (empty($result)) {
+    echo "Không có số chính phương trong khoảng từ $min đến $max";
+} else {
+    echo "Các số chính phương trong khoảng từ $min đến $max là: " . implode(", ", $result);
+}
+
+echo "<br>";

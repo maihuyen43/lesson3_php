@@ -1,0 +1,7 @@
+<?php
+//Viết chương trình PHP để đảo ngược một chuỗi.
+function reverseString($string){
+    return strrev($string);
+}
+echo strrev("Hello PHP!");
+?>

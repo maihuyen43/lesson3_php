@@ -1,0 +1,18 @@
+<?php
+//Viết chương trình PHP để tìm số lẻ lớn nhất trong một mảng
+function largestOddNumber($array){
+    $oddNumberArray = [];
+    foreach($array as $element){
+        if($element % 2 !== 0){
+            $oddNumberArray[] = $element;
+        }
+    }
+    $largest = max($oddNumberArray);
+    return $largest;
+}
+
+$array = [1,2,3,4,4,100,99,12];
+echo "Số lẻ lớn nhất trong mảng là: ";
+echo largestOddNumber($array);
+echo "<br>";
+?>

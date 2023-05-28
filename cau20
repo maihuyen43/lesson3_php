@@ -1,0 +1,34 @@
+<?php
+//Viết chương trình PHP để thêm một phần tử vào đầu hoặc cuối của một mảng.
+function insertToBeginningOrEnd($array, $beginning, $end) {
+    if(isset($beginning)) {
+        $array = insertToBeginning($array, $beginning);
+    }
+
+    if(isset($end)) {
+        $array = insertToEnd($array, $end);
+    }
+
+    foreach($array as $element){
+        echo $element . " ";
+    }
+}
+
+function insertToBeginning($array, $element){
+    array_unshift($array, $element);
+    return $array;
+}
+
+function insertToEnd($array, $element){
+    array_push($array, $element);
+    return $array;
+}
+
+
+$array = [1,2,3,4,5,6,7];
+$beginning = 100;
+$end = null;
+
+insertToBeginningOrEnd($array, $beginning, $end);
+echo "<br>";
+?>

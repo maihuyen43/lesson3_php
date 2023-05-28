@@ -1,0 +1,8 @@
+<?php
+//Viết chương trình PHP để tính số lượng phần tử trong một mảng.
+function countElements($listArray){
+    return($listArray);
+}
+$listArray = array(2, 3, 5, 7, 11, 13, 17, 19);
+echo count($listArray);
+?>

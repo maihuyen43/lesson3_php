@@ -1,0 +1,18 @@
+<?php
+//Viết chương trình PHP để đếm số lần xuất hiện của một phần tử trong một mảng.
+function countArray($array){
+
+}
+$array = array(
+    'freetuts',
+    'freetuts',
+    'thehalfheart',
+    'freetuts.net',
+    'freetuts.net',
+    'freetuts'
+);
+ 
+echo '<pre>';
+print_r(array_count_values($array));
+?>
+       

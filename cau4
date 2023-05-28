@@ -1,0 +1,10 @@
+<?php
+//Viết chương trình PHP để kiểm tra xem một chuỗi có chứa một từ cụ thể hay không.
+$word="world";
+$mystring= "hello world";
+if (strpos ($mystring,$word) !== false){
+    echo "word found";
+}else{
+    echo "word not found";
+}
+?>

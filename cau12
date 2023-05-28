@@ -1,0 +1,18 @@
+<?php
+//Viết chương trình PHP để chèn một phần tử vào một mảng ở vị trí bất kỳ.
+$insertBefore = array( '1','2','3','4','5' );  
+echo 'Mảng ban đầu: '."<br>";  
+foreach ($insertBefore as $x)   
+{
+    echo "$x ";
+}  
+echo "<br>";
+$elementInsert = '$';  
+array_splice( $insertBefore, 3, 0, $elementInsert );   
+echo "Sau khi chèn phần tử '$' thì mảng sẽ như sau: "."<br>";  
+foreach ($insertBefore as $x)   
+{
+    echo "$x ";
+}  
+echo "<br>";
+?>
